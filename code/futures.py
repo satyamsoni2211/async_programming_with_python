@@ -2,7 +2,8 @@ import asyncio
 
 
 async def my_coroutine(fut):
-    fut.set_result('Future is done!')
+    fut.set_result("Future is done!")
+
 
 async def main():
     # fut = asyncio.Future()
@@ -14,5 +15,6 @@ async def main():
     print("Task is created")
     await fut
     print(fut.result())
+
 
 asyncio.run(main())
